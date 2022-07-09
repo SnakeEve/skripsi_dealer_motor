@@ -77,82 +77,12 @@
   </div>
   <!-- ./wrapper -->
 
-  <!-- MODAL -->
-  <div class="modal fade" id="modal-form" aria-modal="true" role="dialog" style="z-index: 1200;">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="card-body">
-            <form>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Type</label>
-                    <select class="form-control" id="vehicle_type_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Brand</label>
-                    <select class="form-control" id="vehicle_brand_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Starting Price</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Quantity</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-
-            </form>
-          </div>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ./MODAL -->
-
-  <!-- MODAL -->
+  <!-- MODAL DATATABLE -->
   <div class="modal fade" id="modal-datatable" aria-modal="true" role="dialog" style="z-index: 1050">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Datatable</h4>
+          <h4 class="modal-title">Detail</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -228,7 +158,138 @@
       </div>
     </div>
   </div>
-  <!-- ./MODAL -->
+  <!-- ./MODAL DATATABLE -->
+
+  <!-- MODAL DETAIL -->
+  <div class="modal fade" id="modal-form" aria-modal="true" role="dialog" style="z-index: 1050">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Form</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body" style="max-height: 2000px; overflow: auto;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="form-group">
+                  <label>Staff</label>
+                  <select class="form-control" id="detail_staff_select">
+                    <option>---option---</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Client</label>
+                  <select class="form-control" id="detail_client_select">
+                    <option>---option---</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Date</label>
+                  <input type="text" class="form-control" id="modal_transaction_date">
+                </div>
+                <div class="form-group">
+                  <label>Vehicle</label>
+                  <select class="form-control" id="detail_vehicle_select">
+                    <option>---option---</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Service Cost</label>
+                  <input type="text" class="form-control" id="modal_vehicle_name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <label class="float-left">Spareparts</label>
+                    <button id="add_sparepart" class="float-right btn btn-sm btn-primary">+</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <table id="data_detail_form" class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Name</th>
+                          <th>Type</th>
+                          <th>Brand</th>
+                          <th>Qty</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                      <tfoot>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="btnSubmitBooking">Submit Booking</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./MODAL DETAIL -->
+
+  <!-- MODAL SPAREPART -->
+  <div class="modal fade" id="modal-sparepart-form" aria-modal="true" role="dialog" style="z-index: 1050">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Form</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body" style="max-height: 2000px; overflow: auto;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <label>Sparepart</label>
+                  <select class="form-control" id="sparepart_select">
+                    <option>---option---</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Quantity</label>
+                  <input type="number" class="form-control" id="modal_client_name" min="0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="btnSubmitSparepart">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./MODAL SPAREPART -->
 
   <!-- MASTER SCRIPTS -->
   <?php include "master_page/master_scripts.php"; ?>
@@ -238,6 +299,7 @@
   <script type="text/javascript">
     let datatable_main;
     let datatable_detail;
+    let datatable_detail_form;
 
     $( document ).ready(function() {
       const protocol = window.location.protocol;
@@ -333,6 +395,25 @@
         });
       });
 
+      $("#btnSubmitBooking").on( "click", function() {
+        Swal.fire({
+          title: 'Apakah Anda yakin?',
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Simpan',
+          cancelButtonText: 'Batal'
+        }).then((result) => {
+          if (result.value) {
+            alert("hit delete api")
+          }
+          else{
+            // alert("cancel")
+          }
+        });
+      });
+
       datatable_main = $('#main_datatable').DataTable({
         language: {
           processing: "<span class='spinner-border spinner-border-sm'></span>"
@@ -399,10 +480,108 @@
           $(settings.nTable).closest(".col-sm-12").css("overflow", "auto");
         }
       });
-      
+
+      let buttons = '<div class="btn-group">'+
+                      '<button type="button" class="btn btn-flat btn-primary" id="btn_new">New</button>'+
+                    '</div>';
+      $(buttons).appendTo('#main_datatable_wrapper .col-md-6:eq(0)');
+
+      $("#btn_new").on( "click", function() {
+        $('#modal-form').modal("show");
+        call_datatable_detail_form();
+      });
+
+      $("#add_sparepart").on( "click", function() {
+        $('#modal-sparepart-form').modal("show");
+      });
+
+      $('#sparepart_select').select2({
+        ajax: {
+          url: 'mock/MOCK_DATA_SPAREPART.json',
+          theme: 'bootstrap4',
+          delay: 250,
+          dataType: 'json',
+          processResults: function (data) {
+            let return_object = [];
+            $.each(data, function( index, value ) {
+              return_object.push({id: value.id, text: value.name});
+            });
+
+            return {
+              results: return_object
+            };
+          }
+        }
+        
+      });
+
+      $("#btnSubmitSparepart").on( "click", function() {
+        alert("Adding sparepart, pushing content to datatable_detail_form")
+      });
+
       $("#main_datatable tbody").on( "click", ".button_detail", function() {
         $('#modal-datatable').modal("show"); 
         call_datatable_detail(123);
+      });
+
+      $('#detail_staff_select').select2({
+        ajax: {
+          url: 'mock/MOCK_DATA_STAFF.json',
+          theme: 'bootstrap4',
+          delay: 250,
+          dataType: 'json',
+          processResults: function (data) {
+            let return_object = [];
+            $.each(data, function( index, value ) {
+              return_object.push({id: value.ID, text: value.ID+" - "+value.Name});
+            });
+
+            return {
+              results: return_object
+            };
+          }
+        }
+        
+      });
+
+      $('#detail_client_select').select2({
+        ajax: {
+          url: 'mock/MOCK_DATA_CLIENT.json',
+          theme: 'bootstrap4',
+          delay: 250,
+          dataType: 'json',
+          processResults: function (data) {
+            let return_object = [];
+            $.each(data, function( index, value ) {
+              return_object.push({id: value.ID, text: value.ID+" - "+value.Name});
+            });
+
+            return {
+              results: return_object
+            };
+          }
+        }
+        
+      });
+
+      $('#detail_vehicle_select').select2({
+        ajax: {
+          url: 'mock/MOCK_DATA_VEHICLE.json',
+          theme: 'bootstrap4',
+          delay: 250,
+          dataType: 'json',
+          processResults: function (data) {
+            let return_object = [];
+            $.each(data, function( index, value ) {
+              return_object.push({id: value.id, text: value.id+" - "+value.name});
+            });
+
+            return {
+              results: return_object
+            };
+          }
+        }
+        
       });
 
     });
@@ -487,6 +666,56 @@
         }
       });
 
+    }
+
+    function call_datatable_detail_form(){
+      datatable_detail_form = $('#data_detail_form').DataTable({
+        language: {
+          processing: "<span class='spinner-border spinner-border-sm'></span>"
+        },
+        contentType: "application/json; charset=utf-8",
+        destroy: true,
+        cache: true,
+        deferRender: true,
+        paging: false,
+        lengthChange: true,
+        searching: false,
+        ordering: false,
+        info: true,
+        autoWidth: false,
+        responsive: true,
+        columnDefs: [
+          {
+            targets: ['_all'],
+            // searchable: true,
+            // sortable: true,
+            // visible: true,
+            defaultContent: ""
+          }
+        ],
+        order: [2, 'asc'],
+        initComplete: function( settings, json ) {
+          $(settings.nTable).closest(".col-sm-12").css("overflow", "auto");
+        },
+        footerCallback: function (row, data, start, end, display) {
+          let api = this.api();
+          
+          let intVal = function (i) {
+              return typeof i === 'string' ? i.replace(/[\$,]/g, '') * 1 : typeof i === 'number' ? i : 0;
+          };
+
+          let qtyTotal = api.column(4).data()
+                        .reduce( function (a, b) {
+                            return intVal(a) + intVal(b);
+                        }, 0 );
+          let priceTotal = api.column(5).data()
+                          .reduce( function (a, b) {
+                              return intVal(a) + intVal(b);
+                          }, 0 );
+          $( api.column(4).footer() ).html(qtyTotal);
+          $( api.column(5).footer() ).html(priceTotal);
+        }
+      });
     }
   </script>
 </body>

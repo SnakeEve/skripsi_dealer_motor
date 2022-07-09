@@ -1,12 +1,18 @@
+=======================================================================================
 README
-
+=======================================================================================
 TOOLS
+=======================================================================================
 Balsamiq https://gist.github.com/williamgh2019/7b2cd28d22ce7e1d06ab8564961794f4
 yED editor https://www.yworks.com/products/yed/download
 Git https://git-scm.com/downloads
+Git clone https://github.com/SnakeEve/skripsi_dealer_motor.git
 
-
+=======================================================================================
 BACKLOG
+=======================================================================================
+staff password...
+
 satu menu UI untuk beli kendaraan / sparepart (client)
 
 sistem pembelian menggunakan FIFO
@@ -19,11 +25,28 @@ kalau mau ditambahkan diskon, buat sistem promo aja, di satu table baru
 
 menu retur, barang yang diretur akan disimpan ke satu table terpisah, stock tidak akan dikembalikan ke stock inventory
 
+=======================================================================================
+FLOW OVERALL APLIKASI
+=======================================================================================
+
+Halaman Client dan Staff harus diisi, karena ini adalah master untuk login client/admin
+
+Halaman Sparepart terpisah menjadi 3 bagian, Master Sparepart itu sendiri, Sparepart Brand dan Sparepart Type, Brand dan Type harus diisi karena itu data master, setelah itu diisi maka Sparepart baru dapat diisi.
+
+Ketika Master Sparepart sudah diisi, kita dapat mengubah stock barang tersebut di Sparepart Stock
+
+^Kendaraan memiliki logika yang persis sama
+
+Halaman Transaction Report Sales, menampilkan order yang sudah selesai, antara memang sudah selesai atau dibatalkan. Detail masing-masing sales, detail pembeli, tanggal beserta sparepart/kendaraan yang dibeli dapat dilihat di menu action di masing-masing baris
+
+Halaman Booking Sales, menampilkan service order yang belum selesai. Admin dapat melakukan approve/reject di detail transaksi, transaksi yang sudah diapprove/reject akan muncul di Report Transaction Service
+
+Halaman Transaction Report Service, menampilkan service order yang sudah selesai, antara memang sudah selesai atau dibatalkan. Detail masing-masing sales, detail pembeli, detail kendaraan yang diservice, tanggal, beserta sparepart yang digunakan dapat dilihat di menu action di masing-masing baris
 
 
-Halaman Booking Service = Menampilkan laporan semua service yang pernah terjadi, dari semua status order kecuali finished dan cancelled.
-Halaman Report Transaction Service = Menampilkan laporan semua service yang pernah terjadi, dari semua status order.
-
+=======================================================================================
+NOTES
+=======================================================================================
 Titip notes:
 Di aplikasi ini, ada 3 major flow
 1. Item transaction
@@ -70,6 +93,10 @@ Status:
 - cancelled by store
 
 * Semua order yg dibatalkan harus ada masukin comment
+
+=======================================================================================
+IGNORE THIS PART
+=======================================================================================
 
 
 FLOW PEMBELIAN kendaraan / sparepart
