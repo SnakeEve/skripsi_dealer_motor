@@ -1,0 +1,166 @@
+===============================================================================
+ADMIN
+===============================================================================
+
+1. Sparepart Page
+- insert sparepart #memasukkan master sparepart
+- update sparepart #update master sparepart
+- update status sparepart #enable/disable master sparepart
+
+1.a Sparepart Brand
+- insert sparepart Brand #memasukkan master sparepart brand untuk pilihan pada master sparepart
+- update sparepart Brand #untuk update data
+- update status sparepart Brand #enable/disable data, jika disabled ga muncul di pilihan form di page
+
+1.b Sparepart Type
+- insert sparepart Type #memasukkan master sparepart type untuk pilihan pada master sparepart
+- update sparepart Type #untuk update data
+- update status sparepart Type #enable/disable data, jika disabled ga muncul di pilihan form di page
+
+1.c Sparepart Price
+- insert sparepart Price #untuk memasukkan harga terbaru dari masing-masing sparepart yg dipilih, harga diambil yang paling baru, ini sengaja didesain demikian tujuannya supaya bisa lihat riwayat perubahan harga saja, kapan saja pernah ubah harga
+- update sparepart Price #untuk update data
+- update status sparepart Price #untuk enable/disable data
+
+#flow halaman vehicle persis sama seperti sparepart
+
+2. Vehicle Page
+- insert vehicle
+- update vehicle
+- update status vehicle
+
+2.a Vehicle Brand
+- insert vehicle Brand
+- update vehicle Brand
+- update status vehicle Brand
+
+2.b Vehicle Type
+- insert vehicle Type
+- update vehicle Type
+- update status vehicle Type
+
+2.c Vehicle Price
+- insert vehicle Price
+- update vehicle Price
+- update status vehicle Price
+
+#untuk flow halaman stock sparepart & vehicle, admin akan melihat list master sparepart atau vehicle, kemudian bisa isi stock yang diinput berdasar tanggal tertentu, konsepnya adalah untuk catatan per periode, kapan barang masuk dsb, kita asumsikan tidak perlu data supplier karena sumber barang selalu dari supplier yang sama
+#rencana awal program ini adalah, barang diambil secara FIFO, barang lama dijual duluan, oleh sebab itu catatan per periode diperlukan, at least itu rencana awalnya sebelum tau kalau yang dibutuhkan adalah UI saja
+
+3. Sparepart stock page
+- insert sparepart stock
+- update sparepart stock
+- delete sparepart stock
+
+4. Vehicle stock page
+- insert vehicle stock
+- update vehicle stock
+- delete vehicle stock
+
+#untuk flow transaction return, admin akan melihat list retur transaksi yang masuk, admin bisa melihat detail return dari sebuah transaksi dan barang-barang mana yang ingin dikembalikan, disini admin dapat approve/reject retur barang
+#konsep aslinya, data yang sudah diretur akan disimpan ke sebuah tabel, dan value awal stock tidak akan dikembalikan, misal 1 shockbreaker dikembalikan, kuantitas stock tidak akan kembali +1, karena barang diasumsikan akan dikembalikan kembali ke supplier
+
+5. Transaction return Page
+- insert transaction return
+- approve/reject transaction return
+
+#di halaman report sales transaction, admin dapat melihat seluruh riwayat penjualan yang pernah terjadi baik itu sedang masuk, dibatalkan atau selesai, tidak termasuk data retur
+
+6. Report sales transaction
+
+#Halaman staff diisi informasi staff baik itu admin atau montir (cuma beda role)
+
+7. Staff Page
+- insert staff
+- update staff
+- update status staff
+
+#untuk halaman client, jika client tidak register dari depan, diberikan pilihan untuk mendaftarkan client secara manual oleh admin, diasumsikan ketika ada client yang ingin service dengan datang secara manual ke showroom tanpa daftar terlebih dahulu
+#client = customer
+
+8. Client Page
+- insert client
+- update client
+- update status client
+
+#pada halaman booking service, admin dapat melihat seluruh request booking service yang belum terselesaikan (selain finished/cancelled), dan admin dapat approve/reject booking jika mungkin sedang penuh, atau bisa juga reschedule service yang nantinya akan dibaca oleh client
+#kalau fitur reschedule dianggap takut menyulitkan ketika sidang, ilangin flow ini aja nanti akan dihilangkan juga dari UI
+#halaman ini bisa dibuka oleh admin atau akun montir, data booking beserta detail didalamnya, jadi ketika order booking masuk, otomatis kan kendaraan harus dicek dulu, nanti admin/montir dapat update data transaksi tersebut untuk menambahkan list sparepart apa yang digunakan dalam service, akan mengurangi stock yang ada, jika sudah ok, admin/montir dapat approve service yang nantinya akan menampilkan harga service untuk dibayar client
+
+9. Booking Service Page
+- update booking service
+- approve/reject booking service
+- reschedule booking service
+
+#menu config price digunakan untuk mengubah harga service saat itu dengan cara mengisi data baru, jadi harga service akan diambil berdasar tanggal paling baru, ini sengaja didesain demikian tujuannya supaya bisa lihat riwayat perubahan harga saja, kapan saja pernah ubah harga
+#tapi kalau mau diubah atau didisable juga bisa, terserah adminnya mau diapain
+
+9.a Service price config price
+-insert price
+-update price
+-update status price
+
+#diasumsikan ada client yang datang tanpa register, admin membuatkan data client dulu, kemudian mengisi data booking, data yang sudah diisi akan masuk ke halaman booking service
+
+9.b Create nonmember transaction
+
+#di halaman report service transaction, admin dapat melihat seluruh riwayat service yang sudah selesai (finished/cancelled)
+
+10. Report service transaction
+
+
+===============================================================================
+Client
+===============================================================================
+
+1. Homepage
+- menampilkan 4 menu, Transaction Sales (beli barang), Order service (request service datang kerumah), Retur order dan history transaction (sales & service)
+
+2. Register
+- insert data registrasi
+
+3. Login
+- untuk login
+- forgot password
+
+4. Logout
+- untuk logout dan kembali ke halaman login
+
+5. User setting
+- untuk ubah password, nama, email, telp, alamat, dsb
+
+6. Transaction Sales
+- menampilkan data barang dengan stock > 0
+- add to cart
+- checkout
+
+7. Order service
+- menampilkan form untuk request order
+
+8. Retur order
+- menampilkan list transaksi yang belum selesai (selain finished/cancelled), client dapat memilih transaksi tertentu untuk melakukan retur atas barang yang sudah dibeli (minimal satu, tidak perlu dikembalikan semua kalau yang rusak cuma satu, itupun terserah mau balikin barang yang mana, kalau barang yang lain ok, isi 0)
+- submit retur
+- nantinya client dapat melihat retur yang sudah direquest diapprove atau tidak, kalau tidak diapprove... samperin aja dealernya, jika diapprove, maka dinyatakan selesai, karena proses pengiriman diluar sistem
+
+9. History transaction
+- menampilkan seluruh transaksi sales, retur atau service (finished/cancelled)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

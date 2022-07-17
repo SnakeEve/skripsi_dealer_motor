@@ -7,6 +7,7 @@ Balsamiq https://gist.github.com/williamgh2019/7b2cd28d22ce7e1d06ab8564961794f4
 yED editor https://www.yworks.com/products/yed/download
 Git https://git-scm.com/downloads
 Git clone https://github.com/SnakeEve/skripsi_dealer_motor.git
+Mockaroo https://www.mockaroo.com/
 
 =======================================================================================
 BACKLOG

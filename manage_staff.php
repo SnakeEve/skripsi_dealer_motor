@@ -146,7 +146,7 @@
         },
         contentType: "application/json; charset=utf-8",
         paging: true,
-        lengthChange: false,
+        lengthChange: true,
         searching: true,
         ordering: true,
         info: true,
