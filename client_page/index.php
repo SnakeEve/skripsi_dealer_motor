@@ -55,14 +55,14 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div class="small-box bg-info">
                 <div class="inner">
-                  <h3>Order Transaction</h3>
+                  <h3>Order Transaksi</h3>
                   <br>
                   <p></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="client_transaction.php" class="small-box-footer">Open page <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="client_transaction.php" class="small-box-footer">Buka Halaman <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
 
@@ -76,35 +76,35 @@
                 <div class="icon">
                   <i class="ion ion-gear-b"></i>
                 </div>
-                <a href="client_service.php" class="small-box-footer">Open page <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="client_service.php" class="small-box-footer">Buka Halaman <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div class="small-box bg-warning">
                 <div class="inner">
-                  <h3>Return Order</h3>
+                  <h3>Retur Order</h3>
                   <br>
                   <p></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-arrow-return-left"></i>
                 </div>
-                <a href="client_return_order.php" class="small-box-footer">Open page <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="client_return_order.php" class="small-box-footer">Buka Halaman <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div class="small-box bg-danger">
                 <div class="inner">
-                  <h3>Transaction History</h3>
+                  <h3>Riwayat Transaksi</h3>
                   <br>
                   <p></p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-stats-bars"></i>
                 </div>
-                <a href="client_transaction_history.php" class="small-box-footer">Open page <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="client_transaction_history.php" class="small-box-footer">Buka Halaman <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
 

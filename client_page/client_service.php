@@ -33,12 +33,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                        <h1>Client Service Form</h1>
+                        <h1>Form Pengajuan Service</h1>
                         </div>
                         <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                            <li class="breadcrumb-item active">Client Service Form</li>
+                            <li class="breadcrumb-item active">Form Pengajuan Service</li>
                         </ol>
                         </div>
                     </div>
@@ -68,19 +68,19 @@
                                                 </select>
                                             </div> -->
                                             <div class="form-group">
-                                                <label>Client ID</label>
+                                                <label>ID Pelanggan</label>
                                                 <input type="text" class="form-control" id="modal_transaction_client_id" value="1" readonly>
                                             </div>
                                             <div class="form-group">
-                                                <label>Client Name</label>
+                                                <label>Nama Pelanggan</label>
                                                 <input type="text" class="form-control" id="modal_transaction_client_name" value="Andi" readonly>
                                             </div>
                                             <div class="form-group">
-                                                <label>Date</label>
+                                                <label>Tanggal</label>
                                                 <input type="text" class="form-control" id="modal_transaction_date">
                                             </div>
                                             <div class="form-group">
-                                                <label>Vehicle</label>
+                                                <label>Kendaraan</label>
                                                 <select class="form-control" id="detail_vehicle_select">
                                                     <option>---option---</option>
                                                 </select>

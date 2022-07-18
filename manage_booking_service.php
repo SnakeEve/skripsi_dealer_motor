@@ -48,11 +48,11 @@
                   <table id="main_datatable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Menu</th>
                         <th>ID</th>
-                        <th>Client ID</th>
-                        <th>Name</th>
-                        <th>Date</th>
+                        <th>ID Pelanggan</th>
+                        <th>Nama</th>
+                        <th>Tanggal</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -92,27 +92,27 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                  <label>Client ID</label>
+                  <label>ID Pelanggan</label>
                   <input type="text" class="form-control"id="modal_client_id" value="123151355135" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Client Name</label>
+                  <label>Nama Pelanggan</label>
                   <input type="text" class="form-control" id="modal_client_name" value="Axel" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Date</label>
+                  <label>Tanggal</label>
                   <input type="text" class="form-control" id="modal_transaction_date" value="1 July 2022 15:30:45" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Vehicle ID</label>
+                  <label>ID Kendaraan</label>
                   <input type="text" class="form-control"id="modal_vehicle_id" value="ASD_123" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Vehicle Name</label>
+                  <label>Nama Kendaraan</label>
                   <input type="text" class="form-control" id="modal_vehicle_name" value="Vario" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Service Cost</label>
+                  <label>Biaya Service</label>
                   <input type="text" class="form-control" id="modal_vehicle_name" value="1500000" readonly>
                 </div>
               </div>
@@ -124,11 +124,11 @@
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>Name</th>
-                      <th>Type</th>
+                      <th>Nama</th>
+                      <th>Tipe</th>
                       <th>Brand</th>
                       <th>Qty</th>
-                      <th>Price</th>
+                      <th>Harga</th>
                     </tr>
                   </thead>
                   <tbody></tbody>
@@ -181,23 +181,23 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label>Client</label>
+                  <label>Pelanggan</label>
                   <select class="form-control" id="detail_client_select">
                     <option>---option---</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label>Date</label>
+                  <label>Tanggal</label>
                   <input type="text" class="form-control" id="modal_transaction_date">
                 </div>
                 <div class="form-group">
-                  <label>Vehicle</label>
+                  <label>Kendaraan</label>
                   <select class="form-control" id="detail_vehicle_select">
                     <option>---option---</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label>Service Cost</label>
+                  <label>Biaya Service</label>
                   <input type="text" class="form-control" id="modal_vehicle_name">
                 </div>
               </div>
@@ -206,7 +206,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <label class="float-left">Spareparts</label>
+                    <label class="float-left">Daftar Sparepart</label>
                     <button id="add_sparepart" class="float-right btn btn-sm btn-primary">+</button>
                   </div>
                 </div>
@@ -216,11 +216,11 @@
                       <thead>
                         <tr>
                           <th>ID</th>
-                          <th>Name</th>
-                          <th>Type</th>
+                          <th>Nama</th>
+                          <th>Tipe</th>
                           <th>Brand</th>
                           <th>Qty</th>
-                          <th>Price</th>
+                          <th>Harga</th>
                         </tr>
                       </thead>
                       <tbody></tbody>
@@ -244,7 +244,7 @@
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <div class="btn-group">
-            <button type="button" class="btn btn-primary" id="btnSubmitBooking">Submit Booking</button>
+            <button type="button" class="btn btn-primary" id="btnSubmitBooking">Submit</button>
           </div>
         </div>
       </div>
@@ -273,7 +273,7 @@
                   </select>
                 </div>
                 <div class="form-group">
-                  <label>Quantity</label>
+                  <label>Kuantitas</label>
                   <input type="number" class="form-control" id="modal_client_name" min="0">
                 </div>
               </div>

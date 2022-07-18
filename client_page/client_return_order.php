@@ -17,12 +17,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Transaction Return</h1>
+              <h1>Retur Transaksi</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item active">Transaction Return</li>
+                <li class="breadcrumb-item active">Retur Transaksi</li>
               </ol>
             </div>
           </div>
@@ -46,11 +46,11 @@
                   <table id="main_datatable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Menu</th>
                         <th>ID</th>
-                        <th>Client ID</th>
-                        <th>Name</th>
-                        <th>Date</th>
+                        <!-- <th>ID Pelanggan</th>
+                        <th>Nama</th> -->
+                        <th>Tanggal</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -76,76 +76,6 @@
   <!-- ./wrapper -->
 
   <!-- MODAL -->
-  <div class="modal fade" id="modal-form" aria-modal="true" role="dialog" style="z-index: 1200;">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="card-body">
-            <form>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Type</label>
-                    <select class="form-control" id="vehicle_type_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Brand</label>
-                    <select class="form-control" id="vehicle_brand_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Starting Price</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Quantity</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-
-            </form>
-          </div>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ./MODAL -->
-
-  <!-- MODAL -->
   <div class="modal fade" id="modal-datatable" aria-modal="true" role="dialog" style="z-index: 1050">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -160,11 +90,11 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                    <label>Transaction ID</label>
+                    <label>ID Transaksi</label>
                     <input type="text" class="form-control"id="modal_client_id" value="111111112222233" readonly>
                 </div>
                 <div class="form-group">
-                    <label>Date</label>
+                    <label>Tanggal</label>
                     <input type="text" class="form-control" id="modal_transaction_date" value="1 July 2022 15:30:45" readonly>
                 </div>
                 <div class="form-group">
@@ -175,17 +105,17 @@
             </div>
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <label>Items</label>
+                <label>Daftar Barang</label>
                 <table id="data_detail" class="table table-bordered table-striped">
                   <thead>
                     <tr>
                       <!-- <th>Action</th> -->
                       <th>ID</th>
-                      <th>Item Type</th>
-                      <th>ID</th>
-                      <th>Name</th>
-                      <th>Quantity</th>
-                      <th>Price</th>
+                      <th>Tipe Barang</th>
+                      <th>ID Barang</th>
+                      <th>Nama</th>
+                      <th>Kuantitas</th>
+                      <th>Harga</th>
                       <th>Status</th>
                     </tr>
                   </thead>
@@ -210,7 +140,7 @@
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <div class="btn-group">
-            <button type="button" class="btn btn-primary" id="btnSubmitReturn">Submit Return</button>
+            <button type="button" class="btn btn-primary" id="btnSubmitReturn">Submit</button>
           </div>
         </div>
       </div>
@@ -316,8 +246,8 @@
             }
           },
           {"data": "tx_id"},
-          {"data": "c_id"},
-          {"data": "c_name"},
+          // {"data": "c_id"},
+          // {"data": "c_name"},
           {
             "data": "id",
             "render": function (data, type, row) {

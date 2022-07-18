@@ -48,12 +48,12 @@
                   <table id="example1" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Menu</th>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Phone</th>
+                        <th>Nama</th>
+                        <th>Telp  </th>
                         <th>Email</th>
-                        <th>Created Date</th>
+                        <th>Tanggal Pembuatan</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -94,7 +94,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Nama</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -102,7 +102,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Phone</label>
+                    <label>No. Telp</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>

@@ -19,12 +19,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Report Transaction Return</h1>
+              <h1>Retur Transaksi</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Report Transaction Return</li>
+                <li class="breadcrumb-item active">Retur Transaksi</li>
               </ol>
             </div>
           </div>
@@ -48,11 +48,11 @@
                   <table id="main_datatable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Nama</th>
                         <th>ID</th>
-                        <th>Client ID</th>
-                        <th>Name</th>
-                        <th>Date</th>
+                        <th>ID Pelanggan</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Tanggal</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -93,7 +93,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Nama</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -101,7 +101,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Type</label>
+                    <label>Tipe</label>
                     <select class="form-control" id="vehicle_type_select">
                       <option>---option---</option>
                     </select>
@@ -121,7 +121,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Starting Price</label>
+                    <label>Harga Awal</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -129,7 +129,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Quantity</label>
+                    <label>Kuantitas</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -140,7 +140,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -162,15 +162,15 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                  <label>Client ID</label>
+                  <label>ID Pelanggan</label>
                   <input type="text" class="form-control"id="modal_client_id" value="123151355135" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Client Name</label>
+                  <label>Nama Pelanggan</label>
                   <input type="text" class="form-control" id="modal_client_name" value="Axel" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Date</label>
+                  <label>Tanggal</label>
                   <input type="text" class="form-control" id="modal_transaction_date" value="1 July 2022 15:30:45" readonly>
                 </div>
               </div>
@@ -183,11 +183,11 @@
                     <tr>
                       <!-- <th>Action</th> -->
                       <th>ID</th>
-                      <th>Item Type</th>
-                      <th>ID</th>
-                      <th>Name</th>
-                      <th>Quantity</th>
-                      <th>Price</th>
+                      <th>Tipe Barang</th>
+                      <th>ID Barang</th>
+                      <th>Nama Barang</th>
+                      <th>Kuantitas</th>
+                      <th>Harga</th>
                       <th>Status</th>
                     </tr>
                   </thead>
@@ -212,8 +212,8 @@
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <div class="btn-group">
-            <button type="button" class="btn btn-danger" id="btnRejectReturn">Reject Return</button>
-            <button type="button" class="btn btn-primary" id="btnApproveReturn">Approve Return</button>
+            <button type="button" class="btn btn-danger" id="btnRejectReturn">Reject Retur</button>
+            <button type="button" class="btn btn-primary" id="btnApproveReturn">Approve Retur</button>
           </div>
         </div>
       </div>

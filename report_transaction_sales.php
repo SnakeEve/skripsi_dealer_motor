@@ -19,12 +19,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Report Transaction Sales</h1>
+              <h1>Laporan Penjualan</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Report Transaction Sales</li>
+                <li class="breadcrumb-item active">Laporan Penjualan</li>
               </ol>
             </div>
           </div>
@@ -48,11 +48,11 @@
                   <table id="main_datatable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Menu</th>
                         <th>ID</th>
-                        <th>Client ID</th>
-                        <th>Name</th>
-                        <th>Date</th>
+                        <th>ID Pelanggan</th>
+                        <th>Nama</th>
+                        <th>Tanggal</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -82,7 +82,7 @@
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
+          <h4 class="modal-title">Form Pengisian</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -93,7 +93,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Nama</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -121,7 +121,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Starting Price</label>
+                    <label>Harga Awal</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -129,7 +129,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Quantity</label>
+                    <label>Kuantitas</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -152,7 +152,7 @@
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Datatable</h4>
+          <h4 class="modal-title">Detail Data</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -162,32 +162,32 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                  <label>Client ID</label>
+                  <label>ID Pelanggan</label>
                   <input type="text" class="form-control"id="modal_client_id" value="123151355135" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Client Name</label>
+                  <label>Nama Pelanggan</label>
                   <input type="text" class="form-control" id="modal_client_name" value="Axel" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Date</label>
+                  <label>Tanggal</label>
                   <input type="text" class="form-control" id="modal_transaction_date" value="1 July 2022 15:30:45" readonly>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <label>Items</label>
+                <label>Data Penjualan</label>
                 <table id="data_detail" class="table table-bordered table-striped">
                   <thead>
                     <tr>
                       <!-- <th>Action</th> -->
                       <th>ID</th>
-                      <th>Item Type</th>
-                      <th>ID</th>
-                      <th>Name</th>
-                      <th>Quantity</th>
-                      <th>Price</th>
+                      <th>Tipe BarangType</th>
+                      <th>ID Barang</th>
+                      <th>Nama Barang</th>
+                      <th>Kuantitas</th>
+                      <th>Harga</th>
                       <th>Status</th>
                     </tr>
                   </thead>

@@ -19,12 +19,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Vehicle</h1>
+              <h1>Kendaraan</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Vehicle</li>
+                <li class="breadcrumb-item active">Kendaraan</li>
               </ol>
             </div>
           </div>
@@ -48,12 +48,12 @@
                   <table id="main_datatable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Menu</th>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Type</th>
+                        <th>Nama</th>
+                        <th>Tipe</th>
                         <th>Brand</th>
-                        <th>Created Date</th>
+                        <th>Tanggal Pembuatan</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -83,7 +83,7 @@
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
+          <h4 class="modal-title">Form Pengisian</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -102,7 +102,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Nama</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -110,7 +110,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Type</label>
+                    <label>Tipe</label>
                     <select class="form-control" id="vehicle_type_select">
                       <option>---option---</option>
                     </select>
@@ -141,7 +141,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -153,7 +153,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Datatable</h4>
+          <h4 class="modal-title">Datatable Brand</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -163,9 +163,9 @@
             <table id="data_brand" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Action</th>
+                  <th>Menu</th>
                   <th>ID</th>
-                  <th>Name</th>
+                  <th>Nama</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -174,7 +174,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -186,7 +186,7 @@
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
+          <h4 class="modal-title">Form Brand</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -205,7 +205,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Nama</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -216,7 +216,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -228,7 +228,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Datatable</h4>
+          <h4 class="modal-title">Datatable Tipe</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -238,9 +238,9 @@
             <table id="data_type" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Action</th>
+                  <th>Menu</th>
                   <th>ID</th>
-                  <th>Name</th>
+                  <th>Nama</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -249,7 +249,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -261,7 +261,7 @@
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
+          <h4 class="modal-title">Form Tipe</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -280,7 +280,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Nama</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -291,7 +291,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -303,7 +303,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Datatable</h4>
+          <h4 class="modal-title">Datatable Harga</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -313,11 +313,11 @@
             <table id="data_price" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Action</th>
+                  <th>Menu</th>
                   <th>ID</th>
-                  <th>V ID</th>
-                  <th>Price</th>
-                  <th>Date</th>
+                  <th>ID Kendaraan</th>
+                  <th>Harga</th>
+                  <th>Tanggal</th>
                   <th>Status</th>
                 </tr>
               </thead>
@@ -327,7 +327,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -339,7 +339,7 @@
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
+          <h4 class="modal-title">Form Harga</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -358,17 +358,25 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>SP ID</label>
+                    <label>Kendaraan</label>
                     <select class="form-control" id="vehicle_select">
                       <option>---option---</option>
                     </select>
                   </div>
                 </div>
               </div>
+              <!-- <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" class="form-control" placeholder="Enter ...">
+                  </div>
+                </div>
+              </div> -->
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Harga</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -376,15 +384,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Price</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Date</label>
+                    <label>Tanggal</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>

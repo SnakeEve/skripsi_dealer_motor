@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <label>Name</label>
+                            <label>Nama</label>
                             <input type="text" class="form-control" placeholder="Enter ...">
                         </div>
                         </div>
@@ -48,7 +48,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <label>Phone</label>
+                            <label>Telp</label>
                             <input type="text" class="form-control" placeholder="Enter ...">
                         </div>
                         </div>
@@ -64,7 +64,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <label>Old Password</label>
+                            <label>Password Lama</label>
                             <input type="password" class="form-control" >
                         </div>
                         </div>
@@ -72,7 +72,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <label>New Password</label>
+                            <label>Password Baru</label>
                             <input type="password" class="form-control" >
                         </div>
                         </div>
@@ -82,7 +82,7 @@
         </div>
         <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>

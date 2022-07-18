@@ -19,12 +19,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Sparepart Stock</h1>
+              <h1>Stock Sparepart</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Sparepart Stock</li>
+                <li class="breadcrumb-item active">Stock Sparepart</li>
               </ol>
             </div>
           </div>
@@ -48,12 +48,12 @@
                   <table id="main_datatable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Menu</th>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Type</th>
+                        <th>Nama</th>
+                        <th>Tipe</th>
                         <th>Brand</th>
-                        <th>Created Date</th>
+                        <th>Tanggal Pembuatan</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -94,7 +94,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Name</label>
+                    <label>Nama</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -102,7 +102,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Type</label>
+                    <label>Tipe</label>
                     <select class="form-control" id="sparepart_type_select">
                       <option>---option---</option>
                     </select>
@@ -122,7 +122,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Starting Price</label>
+                    <label>Harga Awal</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -130,7 +130,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Quantity</label>
+                    <label>Kuantitas</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -141,7 +141,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
@@ -153,7 +153,7 @@
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Datatable</h4>
+          <h4 class="modal-title">Datatable Detail</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -163,12 +163,12 @@
             <table id="data_detail" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th>Action</th>
+                  <th>Menu</th>
                   <th>ID</th>
-                  <th>Name</th>
-                  <th>Type</th>
+                  <th>Nama</th>
+                  <th>Tipe</th>
                   <th>Brand</th>
-                  <th>Created Date</th>
+                  <th>Tanggal Pembuatan</th>
                   <th>Status</th>
                 </tr>
               </thead>
@@ -178,7 +178,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>

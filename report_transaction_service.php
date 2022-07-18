@@ -19,12 +19,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Report Transaction Service</h1>
+              <h1>Laporan Service</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Report Transaction Service</li>
+                <li class="breadcrumb-item active">Laporan Service</li>
               </ol>
             </div>
           </div>
@@ -48,11 +48,11 @@
                   <table id="main_datatable" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th>Action</th>
+                        <th>Menu</th>
                         <th>ID</th>
-                        <th>Client ID</th>
-                        <th>Name</th>
-                        <th>Date</th>
+                        <th>ID Pelanggan</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Tanggal</th>
                         <th>Status</th>
                       </tr>
                     </thead>
@@ -78,81 +78,11 @@
   <!-- ./wrapper -->
 
   <!-- MODAL -->
-  <div class="modal fade" id="modal-form" aria-modal="true" role="dialog" style="z-index: 1200;">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Form</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="card-body">
-            <form>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Type</label>
-                    <select class="form-control" id="vehicle_type_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Brand</label>
-                    <select class="form-control" id="vehicle_brand_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Starting Price</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Quantity</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-
-            </form>
-          </div>
-        </div>
-        <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ./MODAL -->
-
-  <!-- MODAL -->
   <div class="modal fade" id="modal-datatable" aria-modal="true" role="dialog" style="z-index: 1050">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Datatable</h4>
+          <h4 class="modal-title">Detail Transaksi</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -162,43 +92,43 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                  <label>Client ID</label>
+                  <label>ID Pelanggan</label>
                   <input type="text" class="form-control"id="modal_client_id" value="123151355135" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Client Name</label>
+                  <label>Nama Pelanggan</label>
                   <input type="text" class="form-control" id="modal_client_name" value="Axel" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Date</label>
+                  <label>Tanggal</label>
                   <input type="text" class="form-control" id="modal_transaction_date" value="1 July 2022 15:30:45" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Vehicle ID</label>
+                  <label>ID Kendaraan</label>
                   <input type="text" class="form-control"id="modal_vehicle_id" value="ASD_123" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Vehicle Name</label>
+                  <label>Nama Kendaraan</label>
                   <input type="text" class="form-control" id="modal_vehicle_name" value="Vario" readonly>
                 </div>
                 <div class="form-group">
-                  <label>Service Cost</label>
+                  <label>Biaya Service</label>
                   <input type="text" class="form-control" id="modal_vehicle_name" value="1500000" readonly>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <label>Spareparts</label>
+                <label>Daftar Sparepart</label>
                 <table id="data_detail" class="table table-bordered table-striped">
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>Name</th>
-                      <th>Type</th>
+                      <th>Nama</th>
+                      <th>Tipe</th>
                       <th>Brand</th>
                       <th>Qty</th>
-                      <th>Price</th>
+                      <th>Harga</th>
                     </tr>
                   </thead>
                   <tbody></tbody>

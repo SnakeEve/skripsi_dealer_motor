@@ -33,12 +33,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                        <h1>Transaction Page</h1>
+                        <h1>Halaman Penjualan</h1>
                         </div>
                         <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                            <li class="breadcrumb-item active">Transaction Page</li>
+                            <li class="breadcrumb-item active">Halaman Penjualan</li>
                         </ol>
                         </div>
                     </div>
@@ -87,12 +87,12 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Item Detail</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
                                                                     <!-- <i class="fa fa-cart-plus"></i>  -->
-                                                                    Add To Cart
+                                                                    Tambah ke cart
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -134,12 +134,12 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Item Detail</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
                                                                     <!-- <i class="fa fa-cart-plus"></i>  -->
-                                                                    Add To Cart
+                                                                    Tambah ke cart
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -178,12 +178,12 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Item Detail</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
                                                                     <!-- <i class="fa fa-cart-plus"></i>  -->
-                                                                    Add To Cart
+                                                                    Tambah ke cart
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -194,7 +194,7 @@
                                             <div class="col mb-5">
                                                 <div class="card h-100">
                                                     <!-- Sale badge-->
-                                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Diskon</div>
                                                     <!-- Product image-->
                                                     <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="...">
                                                     <!-- Product details-->
@@ -225,12 +225,12 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Item Detail</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
                                                                     <!-- <i class="fa fa-cart-plus"></i>  -->
-                                                                    Add To Cart
+                                                                    Tambah ke cart
                                                                 </button>
                                                             </div>
                                                         </div>

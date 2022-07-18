@@ -22,7 +22,7 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Login disini</p>
 
       <form action="../../index3.html" method="post">
         <div class="input-group mb-3">
@@ -52,18 +52,18 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
-      <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
+      <!-- <p class="mb-1">
+        <a href="forgot-password.html">Lupa password</a>
       </p>
       <p class="mb-0">
-        <a href="register.html" class="text-center">Register a new membership</a>
-      </p>
+        <a href="register.html" class="text-center">Register</a>
+      </p> -->
     </div>
     <!-- /.login-card-body -->
   </div>

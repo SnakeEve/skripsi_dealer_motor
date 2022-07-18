@@ -14,16 +14,16 @@
                     <p>Home</p>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a href="example.php" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
                     <p>Example</p>
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a href="manage_client.php" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
-                    <p>Client</p>
+                    <p>Pelanggan</p>
                 </a>
             </li>
             <li class="nav-item">
@@ -41,7 +41,7 @@
             <li class="nav-item">
                 <a href="manage_sparepart_stock.php" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
-                    <p>Sparepart Stock</p>
+                    <p>Stock Sparepart</p>
                 </a>
             </li>
             <li class="nav-item">
@@ -53,13 +53,13 @@
             <li class="nav-item">
                 <a href="manage_vehicle_stock.php" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
-                    <p>Vehicle Stock</p>
+                    <p>Stock Vehicle</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="report_transaction_sales.php" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
-                    <p>Report Transaction Sales</p>
+                    <p>Laporan Transaksi Penjualan</p>
                 </a>
             </li>
             <li class="nav-item">
@@ -71,13 +71,13 @@
             <li class="nav-item">
                 <a href="report_transaction_service.php" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
-                    <p>Report Service</p>
+                    <p>Laporan Service</p>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="manage_transaction_return.php" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
-                    <p>Transaction Return</p>
+                    <p>Transaksi Retur</p>
                 </a>
             </li>
             
