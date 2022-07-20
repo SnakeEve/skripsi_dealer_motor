@@ -69,11 +69,11 @@
                                             </div> -->
                                             <div class="form-group">
                                                 <label>ID Pelanggan</label>
-                                                <input type="text" class="form-control" id="modal_transaction_client_id" value="1" readonly>
+                                                <input type="text" class="form-control" id="modal_transaction_client_id" value="C-001" readonly>
                                             </div>
                                             <div class="form-group">
                                                 <label>Nama Pelanggan</label>
-                                                <input type="text" class="form-control" id="modal_transaction_client_name" value="Andi" readonly>
+                                                <input type="text" class="form-control" id="modal_transaction_client_name" value="Andy" readonly>
                                             </div>
                                             <div class="form-group">
                                                 <label>Tanggal</label>

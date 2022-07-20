@@ -79,8 +79,8 @@
   <!-- ./wrapper -->
 
   <!-- MODAL -->
-  <div class="modal fade" id="modal-form" aria-modal="true" role="dialog" style="z-index: 1200;">
-    <div class="modal-dialog modal-md">
+  <div class="modal fade" id="modal-form" aria-modal="true" role="dialog" style="z-index: 1100;">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Form</h4>
@@ -94,35 +94,7 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form-group">
-                    <label>Nama</label>
-                    <input type="text" class="form-control" placeholder="Enter ...">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Tipe</label>
-                    <select class="form-control" id="vehicle_type_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Brand</label>
-                    <select class="form-control" id="vehicle_brand_select">
-                      <option>---option---</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form-group">
-                    <label>Harga Awal</label>
+                    <label>Tanggal</label>
                     <input type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
@@ -164,11 +136,8 @@
               <thead>
                 <tr>
                   <th>Menu</th>
-                  <th>ID</th>
-                  <th>Nama</th>
-                  <th>Tipe</th>
-                  <th>Brand</th>
-                  <th>Tanggal Pembuatan</th>
+                  <th>Tanggal</th>
+                  <th>Kuantitas</th>
                   <th>Status</th>
                 </tr>
               </thead>
@@ -367,7 +336,7 @@
         autoWidth: false,
         responsive: true,
         ajax: {
-          "url": "mock/MOCK_DATA_VEHICLE.json", //take the id, put it into the GET param
+          "url": "mock/MOCK_DATA_STOCK.json", //take the id, put it into the GET param
           "type": "GET",
           "headers": {
             'Content-Type': 'application/json'
@@ -393,11 +362,8 @@
               return button_string;
             }
           },
-          {"data": "id"},
-          {"data": "name"},
-          {"data": "type"},
-          {"data": "brand"},
-          {"data": "created_date"},
+          {"data": "tanggal"},
+          {"data": "kuantitas"},
           {"data": "is_active"}
         ],
         columnDefs: [
@@ -406,6 +372,13 @@
             // searchable: true,
             // sortable: true,
             // visible: true,
+            defaultContent: ""
+          },
+          {
+            targets: [3],
+            // searchable: true,
+            // sortable: true,
+            visible: false,
             defaultContent: ""
           }
         ],

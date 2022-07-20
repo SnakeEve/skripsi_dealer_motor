@@ -163,11 +163,11 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
                   <label>ID Pelanggan</label>
-                  <input type="text" class="form-control"id="modal_client_id" value="123151355135" readonly>
+                  <input type="text" class="form-control"id="modal_client_id" value="C-001" readonly>
                 </div>
                 <div class="form-group">
                   <label>Nama Pelanggan</label>
-                  <input type="text" class="form-control" id="modal_client_name" value="Axel" readonly>
+                  <input type="text" class="form-control" id="modal_client_name" value="Andy" readonly>
                 </div>
                 <div class="form-group">
                   <label>Tanggal</label>

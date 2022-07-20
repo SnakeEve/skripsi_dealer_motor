@@ -1,0 +1,10 @@
+[{"id":1,"tanggal":"2022-01-01","kuantitas":"10","is_active":true},
+{"id":2,"tanggal":"2022-01-02","kuantitas":"20","is_active":true},
+{"id":2,"tanggal":"2022-01-03","kuantitas":"30","is_active":true},
+{"id":2,"tanggal":"2022-01-04","kuantitas":"44","is_active":true},
+{"id":2,"tanggal":"2022-01-05","kuantitas":"55","is_active":true},
+{"id":2,"tanggal":"2022-01-06","kuantitas":"69","is_active":true},
+{"id":2,"tanggal":"2022-01-07","kuantitas":"70","is_active":true},
+{"id":2,"tanggal":"2022-01-08","kuantitas":"88","is_active":true},
+{"id":2,"tanggal":"2022-01-09","kuantitas":"99","is_active":true},
+{"id":3,"tanggal":"2022-01-10","kuantitas":"101","is_active":true}]

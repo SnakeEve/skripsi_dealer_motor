@@ -91,7 +91,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
                     <label>ID Transaksi</label>
-                    <input type="text" class="form-control"id="modal_client_id" value="111111112222233" readonly>
+                    <input type="text" class="form-control"id="modal_client_id" value="TX-001" readonly>
                 </div>
                 <div class="form-group">
                     <label>Tanggal</label>

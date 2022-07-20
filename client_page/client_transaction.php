@@ -63,7 +63,7 @@
                                                     <div class="card-body p-4">
                                                         <div class="text-center">
                                                             <!-- Product name-->
-                                                            <h5 class="fw-bolder">Sparepart 1</h5>
+                                                            <h5 class="fw-bolder">Genuine Honda Aki Motor</h5>
                                                             <!-- Product reviews-->
                                                             <div class="d-flex justify-content-center small text-warning mb-2">
                                                                 <div class="bi-star-fill"></div>
@@ -103,14 +103,14 @@
                                             <div class="col mb-5">
                                                 <div class="card h-100">
                                                     <!-- Sale badge-->
-                                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                                                    <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Diskon</div> -->
                                                     <!-- Product image-->
                                                     <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="...">
                                                     <!-- Product details-->
                                                     <div class="card-body p-4">
                                                         <div class="text-center">
                                                             <!-- Product name-->
-                                                            <h5 class="fw-bolder">Popular Item</h5>
+                                                            <h5 class="fw-bolder">Genuine Honda Rem</h5>
                                                             <!-- Product reviews-->
                                                             <div class="d-flex justify-content-center small text-warning mb-2">
                                                                 <div class="bi-star-fill"></div>
@@ -120,7 +120,7 @@
                                                                 <div class="bi-star-fill"></div>
                                                             </div>
                                                             <!-- Product price-->
-                                                            Rp. 50.000,00
+                                                            Rp. 51.000,00
                                                         </div>
                                                     </div>
                                                     <!-- Product actions-->
@@ -154,7 +154,7 @@
                                                     <div class="card-body p-4">
                                                         <div class="text-center">
                                                             <!-- Product name-->
-                                                            <h5 class="fw-bolder">Sparepart 1</h5>
+                                                            <h5 class="fw-bolder">Genuine Kawasaki Lampu</h5>
                                                             <!-- Product reviews-->
                                                             <div class="d-flex justify-content-center small text-warning mb-2">
                                                                 <div class="bi-star-fill"></div>
@@ -164,7 +164,7 @@
                                                                 <div class="bi-star-fill"></div>
                                                             </div>
                                                             <!-- Product price-->
-                                                            Rp. 50.000,00
+                                                            Rp. 52.000,00
                                                         </div>
                                                     </div>
                                                     <!-- Product actions-->
@@ -194,14 +194,14 @@
                                             <div class="col mb-5">
                                                 <div class="card h-100">
                                                     <!-- Sale badge-->
-                                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Diskon</div>
+                                                    <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Diskon</div> -->
                                                     <!-- Product image-->
                                                     <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="...">
                                                     <!-- Product details-->
                                                     <div class="card-body p-4">
                                                         <div class="text-center">
                                                             <!-- Product name-->
-                                                            <h5 class="fw-bolder">Popular Item</h5>
+                                                            <h5 class="fw-bolder">Genuine Yamaha Rantai Belt</h5>
                                                             <!-- Product reviews-->
                                                             <div class="d-flex justify-content-center small text-warning mb-2">
                                                                 <div class="bi-star-fill"></div>
@@ -211,7 +211,7 @@
                                                                 <div class="bi-star-fill"></div>
                                                             </div>
                                                             <!-- Product price-->
-                                                            Rp. 50.000,00
+                                                            Rp. 53.000,00
                                                         </div>
                                                     </div>
                                                     <!-- Product actions-->
