@@ -36,18 +36,36 @@
             confirmButtonText: 'Simpan',
             cancelButtonText: 'Batal'
             }).then((result) => {
-            if (result.value) {
-                alert("hit delete api")
-            }
-            else{
-                // alert("cancel")
-            }
+                if (result.value) {
+                    alert("hit delete api")
+                }
+                else{
+                    // alert("cancel")
+                }
             });
         });
 
         $("#btnProfile").on( "click", function() {
             $('#modal-user-profile').modal("show"); 
         });
+
+        $("#btnRegister").on( "click", function() {
+            $('#modal-user-register').modal("show"); 
+        });
+
+        $("#btnLogin").on( "click", function() {
+            $('#modal-user-login').modal("show"); 
+        });
+
+        $(".btnDetail").on( "click", function() {
+            console.log("asd")
+            $('#modal-product-detail').modal("show"); 
+        });
+
+        $("#btnCheckout").on( "click", function() {
+            $('#modal-cart-checkout').modal("show"); 
+        });
+        
 
     });
 

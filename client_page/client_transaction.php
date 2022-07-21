@@ -87,7 +87,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto btnDetail">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
@@ -134,7 +134,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto btnDetail">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
@@ -178,7 +178,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto btnDetail">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
@@ -225,7 +225,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                                <button type="button" class="btn btn-outline-dark mt-auto">Detail Barang</button>
+                                                                <button type="button" class="btn btn-outline-dark mt-auto btnDetail">Detail Barang</button>
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                                 <button type="button" class="btn btn-outline-dark mt-auto">
@@ -254,5 +254,57 @@
 
         <?php include "master_page/master_footer.php"; ?>
     </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modal-product-detail" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Product Detail</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h3>Genuine Honda Aki Motor</h3>
+                            <h6>Product by Honda</h6>
+                            <br>
+                            <h6>Rp. 100.000,00</h6>
+
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" min=0 max=999>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <button type="button" class="btn btn-outline-dark mt-auto">
+                                        <i class="fa fa-cart-plus"></i>
+                                        Tambah ke cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- ./MODAL -->
+    
+    <!-- MASTER SCRIPTS -->
+    <?php include "master_page/master_scripts.php"; ?>
 
 </body>
